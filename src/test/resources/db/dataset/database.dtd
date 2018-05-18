@@ -1,0 +1,43 @@
+<!ELEMENT dataset (
+    account*,
+    countryinfo*,
+    flyway_schema_history*,
+    sys_config*)>
+
+<!ELEMENT account EMPTY>
+<!ATTLIST account
+    id CDATA #REQUIRED
+    nick CDATA #IMPLIED
+    password CDATA #IMPLIED
+    created_at CDATA #IMPLIED
+    updated_at CDATA #IMPLIED
+>
+
+<!ELEMENT countryinfo EMPTY>
+<!ATTLIST countryinfo
+    doc CDATA #IMPLIED
+    _id CDATA #REQUIRED
+>
+
+<!ELEMENT flyway_schema_history EMPTY>
+<!ATTLIST flyway_schema_history
+    installed_rank CDATA #REQUIRED
+    version CDATA #IMPLIED
+    description CDATA #REQUIRED
+    type CDATA #REQUIRED
+    script CDATA #REQUIRED
+    checksum CDATA #IMPLIED
+    installed_by CDATA #REQUIRED
+    installed_on CDATA #IMPLIED
+    execution_time CDATA #REQUIRED
+    success CDATA #REQUIRED
+>
+
+<!ELEMENT sys_config EMPTY>
+<!ATTLIST sys_config
+    variable CDATA #REQUIRED
+    value CDATA #IMPLIED
+    set_time CDATA #IMPLIED
+    set_by CDATA #IMPLIED
+>
+
