@@ -21,13 +21,17 @@ Please use "docker-compose up -d" to start MySQL 8.
 
 # MySQL Shell
 
-* install: brew cask install mysql-shell
-* SQL Model(mysql cli) :  mysqlsh --sql --uri root@127.0.0.1/demo
+* install MySQL Shell:
 ```bash
-mysqlsh --uri root@127.0.0.1/demo
+brew cask install mysql-shell
 ```
-Operations in MySQL Shell
 
+* SQL Model(mysql cli)
+```bash
+mysqlsh --sql --uri root@127.0.0.1/demo
+```
+
+Operations in MySQL Shell
 ```
 JS> \?
 JS> \use demo
