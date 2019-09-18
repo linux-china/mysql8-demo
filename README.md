@@ -41,6 +41,7 @@ JS> db.createCollection("countryinfo")
 # Reference
 
 * MySQL Shell: https://dev.mysql.com/doc/refman/5.7/en/mysql-shell.html
+* Introducing MySQL Shell: Administration Made Easy with Python: https://learning.oreilly.com/library/view/introducing-mysql-shell/9781484250839/
 * Connector/J 8.0: https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-whats-new.html
 * Enable X Protocol: https://dev.mysql.com/doc/refman/5.7/en/document-store-setting-up.html
 ```
