@@ -38,6 +38,11 @@ JS> \use demo
 JS> db.createCollection("countryinfo")
 ```
 
+### Create a new user
+
+```
+GRANT ALL ON *.* to r2dbc@'%' IDENTIFIED BY '123456';
+```
 # Reference
 
 * MySQL Shell: https://dev.mysql.com/doc/refman/5.7/en/mysql-shell.html
