@@ -1,7 +1,7 @@
 MySQL 8.0
 =========
 
-Demo for MySQL 8 with Document store feature.
+Demo for MySQL 8 with Document store and xdevapi feature.
 
 # Setup
 
@@ -9,8 +9,8 @@ Please use "docker-compose up -d" to start MySQL 8.
 
 # Ports
 
-* 3306: traditional
-* 33060: X Protocol
+* 4306: traditional
+* 43060: X Protocol
 
 # Document Store
 
