@@ -23,11 +23,11 @@ public class XdevApiTest extends BaseTest {
     public void testQuery() throws Exception {
         SqlStatement statement = session.sql("select * from account");
         CompletableFuture<SqlResult> future = statement.executeAsync();
-        Mono.fromFuture(future).flatMapMany(rows -> {
-            return Flux.fromIterable(rows.fetchAll());
-        }).subscribe(row -> {
-            System.out.println(row.getString("nick"));
-        });
+        Mono.fromFuture(future)
+                .flatMapMany(rows -> Flux.fromIterable(rows.fetchAll()))
+                .subscribe(row -> {
+                    System.out.println(row.getString("nick"));
+                });
         Thread.sleep(2000);
     }
 }
