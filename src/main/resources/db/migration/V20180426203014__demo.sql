@@ -5,4 +5,4 @@ create table account (
   password   varchar(32),
   created_at datetime,
   updated_at datetime
-) DEFAULT CHARSET utf8;
+) DEFAULT CHARSET UTF8MB4;
